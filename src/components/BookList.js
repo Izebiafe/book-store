@@ -1,5 +1,6 @@
 import React from 'react';
 import Book from './Book';
+import Input from './Input';
 
 const BookList = () => {
   const books = [
@@ -31,6 +32,7 @@ const BookList = () => {
           category={book.category}
         />
       ))}
+      <Input />
     </div>
   );
 };
