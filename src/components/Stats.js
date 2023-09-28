@@ -1,12 +1,12 @@
 import React from 'react';
+import Chapter from './Chapter';
+import Progress from './Progress';
+import './styles/stats.css';
 
 const Stats = () => (
-  <div>
-    <div className="oval" />
-    <div className="stats">
-      <h2>35%</h2>
-      <p>completed</p>
-    </div>
+  <div className="stats-container">
+    <Progress />
+    <Chapter />
   </div>
 );
 
