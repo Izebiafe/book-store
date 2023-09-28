@@ -13,9 +13,11 @@
 body {
   background-color: var(--background);
   padding: 9.313rem 6.25rem;
-  font-family: 'Montserrat', sans-serif;;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
+
   --white-three: #e8e8e8;
+
   -moz-osx-font-smoothing: grayscale;
 }
 

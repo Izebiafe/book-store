@@ -1,10 +1,66 @@
+.book-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40em;
+  align-items: center;
+  padding: 1.68rem;
+  background: #fff;
+  border-radius: 4px;
+  border: solid 1px var(--white-three);
+}
+
 .book {
-    display: flex;
-    justify-content: space-between;
-    gap: 2.5rem;
-    align-items: center;
-    padding: 1.68rem;
-    background: #fff;
-    border-radius: 4px;
-    border: solid 1px var(--white-three);
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.book-details h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-stretch: normal;
+  color: var(--gray-one);
+}
+
+.book-details h2 {
+  font-size: 1.375rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  font-stretch: normal;
+  color: black;
+  text-transform: capitalize;
+}
+
+.book-details p {
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-family: 'Roboto Slab', serif;
+  font-stretch: normal;
+  color: var(--text-blue);
+}
+
+.book-buttons button {
+  border: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  background-color: transparent;
+  color: var(--text-blue);
+  cursor: pointer;
+}
+
+.book-buttons button:not(:first-child) {
+  margin-left: 2rem;
+}
+
+.book-buttons button:not(:last-child) {
+  border-right: 1.5px solid var(--gray-two);
+  padding-right: 1rem;
+}
+

@@ -1,25 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Chapter from './Chapter';
 import Stats from './Stats';
 import './styles/book.css';
 
 function Book({ book, deleteBook }) {
   return (
-    <li className="book">
-      <div>
-        <div>
-          <div>
+    <li className="book-container">
+      <div className="book">
+        <div className="book-details">
+          <h3>
             {book.category}
-          </div>
-          <div>
+          </h3>
+          <h2>
             {book.title}
-          </div>
-          <div>
+          </h2>
+          <p>
             {book.author}
-          </div>
+          </p>
         </div>
-        <div>
+        <div className="book-buttons">
           <button type="button">
             Comments
           </button>
@@ -31,10 +30,7 @@ function Book({ book, deleteBook }) {
           </button>
         </div>
       </div>
-      <div>
-        <Stats />
-        <Chapter />
-      </div>
+      <Stats />
     </li>
   );
 }
