@@ -1,8 +1,8 @@
 .book-container {
   display: flex;
+  flex-wrap: wrap; /* Allow books to wrap on smaller screens */
   justify-content: space-between;
-  gap: 32rem;
-  align-items: center;
+  gap: 1.68rem;
   padding: 1.68rem;
   background: #fff;
   border-radius: 4px;
@@ -10,6 +10,7 @@
 }
 
 .book {
+  flex: 1; /* Allow books to take equal width and wrap on smaller screens */
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -47,6 +48,11 @@
   text-transform: capitalize;
 }
 
+.book-buttons {
+  display: flex;
+  gap: 2rem; /* Adjust spacing between buttons */
+}
+
 .book-buttons button {
   border: none;
   font-family: 'Roboto Slab', serif;
@@ -57,11 +63,9 @@
   cursor: pointer;
 }
 
-.book-buttons button:not(:first-child) {
-  margin-left: 2rem;
-}
-
-.book-buttons button:not(:last-child) {
-  border-right: 1.5px solid var(--gray-two);
-  padding-right: 1rem;
+/* Remove margin and border-right from last button */
+.book-buttons button:last-child {
+  margin-left: 0;
+  border-right: none;
+  padding-right: 0;
 }

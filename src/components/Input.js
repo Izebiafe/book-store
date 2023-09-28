@@ -10,6 +10,7 @@ const Input = () => {
   const [category, setCategory] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const dispatch = useDispatch();
+
   const submitHandler = (e) => {
     e.preventDefault();
     if (!title || !author || !category) {
@@ -27,10 +28,11 @@ const Input = () => {
     setAuthor('');
     setCategory('');
   };
+
   return (
     <div className="form-container">
       <h2>Add New Book</h2>
-      <form className="input-form">
+      <form className="input-form" onSubmit={submitHandler}>
         <input
           type="text"
           placeholder="Book title"
@@ -60,9 +62,10 @@ const Input = () => {
         </div>
 
         {errorMessage && <div className="text-danger error-message">{errorMessage}</div>}
-        <button type="submit" id="add-new-book" onClick={submitHandler}>ADD BOOK</button>
+        <button type="submit" id="add-new-book">ADD BOOK</button>
       </form>
     </div>
   );
 };
+
 export default Input;
