@@ -15,18 +15,20 @@ function App() {
             <Route
               path="/"
               element={(
+
                 <>
                   <ul>
                     <BookList />
                   </ul>
+
                 </>
-            )}
+              )}
             />
             <Route path="/categories" element={<Categories />} />
           </Routes>
+          <Input />
         </main>
       </div>
-      <Input />
     </BrowserRouter>
   );
 }
