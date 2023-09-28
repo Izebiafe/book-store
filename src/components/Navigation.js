@@ -16,7 +16,7 @@ const Navbar = () => (
           </li>
         </ul>
       </nav>
-      </div>
+    </div>
     <div className="user">
       <i className="fa-solid fa-user" />
     </div>

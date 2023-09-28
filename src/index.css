@@ -1,7 +1,24 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Outfit:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
   margin: 0;
-  font-family: 'Courier New', Courier, monospace;
+  padding: 0;
+}
+
+:root {
+  --background: #f5f6fa;
+  --blue-primary: #0290ff;
+}
+
+body {
+  background-color: var(--background);
+  padding: 9.313rem 6.25rem;
+  font-family: 'Montserrat', sans-serif;;
   -webkit-font-smoothing: antialiased;
+  --white-three: #e8e8e8;
   -moz-osx-font-smoothing: grayscale;
 }
 
+li {
+  list-style: none;
+}

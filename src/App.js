@@ -13,10 +13,17 @@ function App() {
         <main>
 
           <Routes>
-            <Route path="/" element={<BookList />} />
+            <Route
+              path="/"
+              element={(
+                <ul>
+                  <BookList />
+                </ul>
+              )}
+            />
             <Route path="/categories" element={<Categories />} />
           </Routes>
-
+          <Input />
         </main>
         <Input />
       </div>
