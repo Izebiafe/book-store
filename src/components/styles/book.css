@@ -26,6 +26,7 @@
   font-weight: 600;
   font-stretch: normal;
   color: var(--gray-one);
+  text-transform: uppercase;
 }
 
 .book-details h2 {
@@ -43,6 +44,7 @@
   font-family: 'Roboto Slab', serif;
   font-stretch: normal;
   color: var(--text-blue);
+  text-transform: capitalize;
 }
 
 .book-buttons button {
