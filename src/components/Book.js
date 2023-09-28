@@ -1,28 +1,45 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Stats from './Stats';
+import './styles/book.css';
 
 function Book({ book, deleteBook }) {
-  return (
-    <div>
+  const {
+    id, category, title, author,
+  } = book;
 
-      <li>
-        <div>
-          <p>Title:</p>
-          {book.title}
+  const handleDeleteClick = () => {
+    deleteBook(id);
+  };
+
+  const commentsButton = (
+    <button type="button">Comments</button>
+  );
+
+  const removeButton = (
+    <button type="button" onClick={handleDeleteClick}>Remove</button>
+  );
+
+  const editButton = (
+    <button type="button">Edit</button>
+  );
+
+  return (
+    <li className="book-container">
+      <div className="book">
+        <div className="book-details">
+          <h3>{category}</h3>
+          <h2>{title}</h2>
+          <p>{author}</p>
         </div>
-        <div>
-          <p>Author:</p>
-          {book.author}
+        <div className="book-buttons">
+          {commentsButton}
+          {removeButton}
+          {editButton}
         </div>
-        <div>
-          <p>Category:</p>
-          {book.category}
-        </div>
-        <button type="button" onClick={() => deleteBook(book.id)}>
-          Delete Book
-        </button>
-      </li>
-    </div>
+      </div>
+      <Stats />
+    </li>
   );
 }
 

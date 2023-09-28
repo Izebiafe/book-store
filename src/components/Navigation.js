@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './styles/navigation.css';
 
 const Navbar = () => (
-  <div>
-    <header>
-      <h1>Bookstore</h1>
+  <header>
+    <div className="navbar">
+      <h1>Bookstore CMS</h1>
       <nav>
         <ul>
           <li>
@@ -15,8 +16,11 @@ const Navbar = () => (
           </li>
         </ul>
       </nav>
-    </header>
-  </div>
+    </div>
+    <div className="user">
+      <i className="fa-solid fa-user" />
+    </div>
+  </header>
 );
 
 export default Navbar;

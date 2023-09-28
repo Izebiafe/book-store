@@ -1,0 +1,65 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.88rem;
+  max-width: 100%;
+  padding: 2.6rem 5%;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.form-container h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  text-transform: uppercase;
+  color: var(--gray-one);
+}
+
+.input-form {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1.88rem;
+  color: var(--gray-three);
+}
+
+.title,
+.author,
+.category-input input {
+  flex: 1;
+  padding: 1.2rem 2%;
+}
+
+.category-input {
+  position: relative;
+}
+
+.category-input i {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--gray-two);
+}
+
+.input-form button {
+  background-color: var(--blue-primary);
+  color: white;
+  font-size: 0.813rem;
+  font-weight: 600;
+  font-family: 'Roboto Slab', serif;
+  padding: 1rem 2%;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.2s;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .input-form {
+    flex-direction: column;
+  }
+}

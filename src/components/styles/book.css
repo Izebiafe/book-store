@@ -1,0 +1,83 @@
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  /* Allow books to wrap on smaller screens */
+  justify-content: space-between;
+  gap: 1.68rem;
+  padding: 1.68rem;
+  background: #fff;
+  border-radius: 4px;
+  border: solid 1px var(--white-three);
+}
+
+.book {
+  flex: 1;
+
+  /* Allow books to take equal width and wrap on smaller screens */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.book-details h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-stretch: normal;
+  color: var(--gray-one);
+  text-transform: uppercase;
+}
+
+.book-details h2 {
+  font-size: 1.375rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  font-stretch: normal;
+  color: black;
+  text-transform: capitalize;
+}
+
+.book-details p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: 'Roboto Slab', serif;
+  font-stretch: normal;
+  color: var(--text-blue);
+  text-transform: capitalize;
+}
+
+.book-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.book-buttons button {
+  border: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  background-color: transparent;
+  color: var(--text-blue);
+  cursor: pointer;
+}
+
+.book-buttons button:last-child {
+  margin-left: 0;
+  border-right: none;
+  padding-right: 0;
+}
+
+.book-buttons button:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
+.book-buttons button:not(:last-child) {
+  border-right: 1.5px solid var(--gray-two);
+  padding-right: 1rem;
+}

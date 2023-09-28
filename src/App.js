@@ -3,6 +3,7 @@ import './App.css';
 import BookList from './components/BookList';
 import Categories from './components/Categories';
 import Navbar from './components/Navigation';
+import Input from './components/Input';
 
 function App() {
   return (
@@ -10,12 +11,22 @@ function App() {
       <div className="App">
         <Navbar />
         <main>
-
           <Routes>
-            <Route path="/" element={<BookList />} />
+            <Route
+              path="/"
+              element={(
+
+                <>
+                  <ul>
+                    <BookList />
+                  </ul>
+
+                </>
+              )}
+            />
             <Route path="/categories" element={<Categories />} />
           </Routes>
-
+          <Input />
         </main>
       </div>
     </BrowserRouter>
