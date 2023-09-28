@@ -1,6 +1,7 @@
 .book {
     display: flex;
     justify-content: space-between;
+    gap: 2.5rem;
     align-items: center;
     padding: 1.68rem;
     background: #fff;

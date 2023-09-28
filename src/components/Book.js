@@ -31,8 +31,10 @@ function Book({ book, deleteBook }) {
           </button>
         </div>
       </div>
-      <Stats />
-      <Chapter />
+      <div>
+        <Stats />
+        <Chapter />
+      </div>
     </li>
   );
 }
