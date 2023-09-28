@@ -40,7 +40,7 @@
 
 .book-details p {
   font-size: 0.875rem;
-  font-weight: 300;
+  font-weight: 400;
   font-family: 'Roboto Slab', serif;
   font-stretch: normal;
   color: var(--text-blue);
@@ -51,7 +51,7 @@
   border: none;
   font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
-  font-weight: 300;
+  font-weight: 400;
   background-color: transparent;
   color: var(--text-blue);
   cursor: pointer;
