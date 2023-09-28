@@ -6,7 +6,7 @@ const Navbar = () => (
     <header>
       <h1>Bookstore</h1>
       <nav>
-      <ul>
+        <ul>
           <li>
             <Link to="/">Books</Link>
           </li>
