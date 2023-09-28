@@ -11,22 +11,22 @@ function App() {
       <div className="App">
         <Navbar />
         <main>
-
           <Routes>
             <Route
               path="/"
               element={(
-                <ul>
-                  <BookList />
-                </ul>
-              )}
+                <>
+                  <ul>
+                    <BookList />
+                  </ul>
+                </>
+            )}
             />
             <Route path="/categories" element={<Categories />} />
           </Routes>
-          <Input />
         </main>
-        <Input />
       </div>
+      <Input />
     </BrowserRouter>
   );
 }
