@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Chapter from './Chapter';
+import Stats from './Stats';
 
 function Book({ book, deleteBook }) {
   return (
@@ -7,20 +9,31 @@ function Book({ book, deleteBook }) {
 
       <li>
         <div>
-          <p>Title:</p>
-          {book.title}
+          <div>
+            <div>
+              {book.category}
+            </div>
+            <div>
+              {book.title}
+            </div>
+            <div>
+              {book.author}
+            </div>
+          </div>
+          <div>
+            <button type="button">
+              Comments
+            </button>
+            <button type="button" onClick={() => deleteBook(book.id)}>
+              Remove
+            </button>
+            <button type="button">
+              Edit
+            </button>
+          </div>
         </div>
-        <div>
-          <p>Author:</p>
-          {book.author}
-        </div>
-        <div>
-          <p>Category:</p>
-          {book.category}
-        </div>
-        <button type="button" onClick={() => deleteBook(book.id)}>
-          Delete Book
-        </button>
+        <Stats />
+        <Chapter />
       </li>
     </div>
   );
