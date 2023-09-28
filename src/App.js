@@ -3,6 +3,7 @@ import './App.css';
 import BookList from './components/BookList';
 import Categories from './components/Categories';
 import Navbar from './components/Navigation';
+import Input from './components/Input';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           </Routes>
 
         </main>
+        <Input />
       </div>
     </BrowserRouter>
   );
